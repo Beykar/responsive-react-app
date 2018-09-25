@@ -22,7 +22,21 @@ class Main extends Component{
                  imageSource: 'data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==',
                  heading:'Heading',
                  p:'3. Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.' 
-             }
+             },  { 
+                imageSource: 'data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==',
+                heading:'Heading',
+                p:'4. Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.' 
+            },
+            { 
+                imageSource: 'data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==',
+                heading:'Heading',
+                p:'5. Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.' 
+            },
+            { 
+                imageSource: 'data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==',
+                heading:'Heading',
+                p:'6. Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.' 
+            }
              ]
           }  
         this.removePost = this.removePost.bind(this)
@@ -38,7 +52,7 @@ class Main extends Component{
         
     render(){        
              return(
-                    <div className="mainContainer container">
+                    <div className="mainContainer container-fluid">
                             <CardWall posts={this.state.posts} onRemovePost = {this.removePost} />
                     </div>        
              )   
