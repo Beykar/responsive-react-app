@@ -5,10 +5,21 @@ import './FormPage.css'
 
 
 class FormPage extends Component{
+     constructor(){
+         super()
+        this.handleSubmit = this.handleSubmit.bind(this)
+     }   
+        
+     
+     handleSubmit(event){
+            event.preventDefault();
+        }
+    
+
     render (){
         return (
             <div>
-                <Form className="col-12">
+                <Form className="col-12" onSubmit={this.handleSubmit}>
                    <FormGroup className="col-12">                     
                         <Label className="" for="imageSource">Image Source</Label>
                         <input type="FormText" name="imageSource" placeholder="Enter image link here... "></input>
