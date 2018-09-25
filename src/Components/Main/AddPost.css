@@ -1,0 +1,27 @@
+.container-fluid{
+    justify-items: center;
+}
+
+
+.btnDiv{
+    margin:30px auto;
+}
+
+.btnDiv Button:hover{
+    color: white !important;
+}
+
+.btnDiv Button{
+    width:100%;
+    border-radius:50px
+}
+
+Button a{
+    color: white;
+    font-weight:700;
+}
+
+Button a:hover{
+    color: black;
+    text-decoration: none;
+}
