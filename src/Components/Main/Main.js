@@ -1,6 +1,8 @@
 import React, {Component} from 'react'
 import './Main.css'
 import CardWall from './CardWall'
+import {Route} from 'react-router-dom'
+import AddPostPage from './AddPostPage'
 
      
 class Main extends Component{
@@ -42,6 +44,10 @@ class Main extends Component{
         this.removePost = this.removePost.bind(this)
     }    
     
+    navigate(){
+    }
+
+
     removePost(postRemoved){
             console.log(postRemoved.p)
             this.setState((state) => ({
@@ -51,13 +57,21 @@ class Main extends Component{
             }            
         
     render(){        
-             return(
-                    <div className="mainContainer container-fluid">
+             return (
+             <div>
+                 <Route exact path="/" render = {()=>(
+                        <div className="mainContainer container-fluid">
                             <CardWall posts={this.state.posts} onRemovePost = {this.removePost} />
-                    </div>        
-             )   
-
-        }
+                        </div>  
+                 )}/>
+                 <Route path ="/AddPostPage" render ={()=>(
+                  <div>              
+                    <AddPostPage/>
+                    </div>
+                 )}/>            
+              </div>
+             )
+    }
 
 }
 
