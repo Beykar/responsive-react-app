@@ -10,7 +10,7 @@ class AddPostPage extends Component {
 
             <div className="mainContainer container-fluid">
                       <h1>Add Post</h1>
-                      <FormPage/>
+                      <FormPage onAddPost={this.props.onAddPost}/>
              </div>
 
         </div>
