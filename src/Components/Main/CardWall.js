@@ -11,7 +11,7 @@ function CardWall(props){
                 .sort((x,y)=>{
                  return y.id -x.id
                 })
-                .map((post, index)=> <Card key={index} post = {post} removePost = {props.onRemovePost} />)}
+                .map((post, index)=> <Card key={post.id} post = {post} removePost = {props.onRemovePost} />)}
          </div>
     </div>
 }
